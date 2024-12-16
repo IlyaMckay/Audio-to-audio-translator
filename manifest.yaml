@@ -1,0 +1,11 @@
+applications:
+- name: 
+  path: .
+  command: gunicorn -b 0.0.0.0:$PORT app:app
+  memory: 256M
+  disk_quota: 512M
+  health-check-type: process
+  routes:
+  - route: 
+  buildpacks:
+  - python_buildpack

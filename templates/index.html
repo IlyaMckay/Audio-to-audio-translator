@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Processor</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Аудио процессор</h1>
+        <div id="form-container">
+            <form onsubmit="handleFormSubmit(event)">
+                <input type="file" name="audio" accept=".mp3, .wav, .ogg, .flac" required>
+                <button type="submit">Начать обработку</button>
+            </form>
+        </div>
+        <div id="processing" style="display:none;">
+            <p>Не закрывайте страницу - файл обрабатывается...</p>
+            <p class="processing-time">
+                Время обработки каждого файла может варьироваться и составлять от 1:1 до 1:3 продолжительности файла
+            </p>
+        </div>
+        <div id="saveMessage" style="display:none;">
+            <p>Файл будет сохранён в папку "Загрузки" с префиксом "rus_".</p>
+        </div>
+        <div id="downloadLink" style="display:none;">
+            <a id="downloadButton">Сохранить файл</a>
+        </div>
+    </div>
+</body>
+</html>

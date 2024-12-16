@@ -1,0 +1,8 @@
+Flask==3.1.0
+pydub==0.25.1
+vosk-tts==0.3.56
+deep-translator==1.11.4
+SpeechRecognition==3.11.0
+assemblyai==0.35.1
+gunicorn==20.1.0
+python-dotenv==1.0.1
