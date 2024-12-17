@@ -1,0 +1,8 @@
+applications:
+  - name: process-pimsleur-classes-rus
+    memory: 2G
+    disk_quota: 2G
+    docker:
+      image: ilyamckay/process-pimsleur-classes-rus:latest
+    env:
+      DISABLE_COLLECTSTATIC: 1
