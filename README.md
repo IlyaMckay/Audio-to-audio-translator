@@ -44,7 +44,7 @@ Usage
 
   python app.py
 
-  Open [invalid URL removed] in your web browser.
+  Open it in your web browser.
 
   Select an audio file to upload (.wav, .mp3, etc.).
 
