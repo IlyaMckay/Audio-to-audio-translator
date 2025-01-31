@@ -81,11 +81,12 @@ class AudioToAudio:
 
         try:
             transcript = aai_transcriber.transcribe(audio_bytes)
+            return transcript.text, transcript.json_response["language_code"]
 
         except Exception as e:
-            print(f"Transcription error occurred. {e}")
+            print(f"Transcription error occurred: {e}")
+            return None, None
 
-        return transcript.text, transcript.json_response["language_code"]
 
     def translate_text(self, lang_code: str, text_to_translate: str) -> str:
         """
