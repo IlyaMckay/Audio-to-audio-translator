@@ -1,3 +1,13 @@
+# Audio-to-Audio Translator
+
+> **Overview.** A speech-to-speech translation pipeline in a Flask web app: upload a recording, and it comes back as audio in the other language. It splits the audio on silence, transcribes each segment, detects the language, translates English to Russian and synthesizes the result into one audio file with natural pauses.
+>
+> **Status:** a personal project, not hosted; runs locally with an AssemblyAI API key (see Installation below). Packaged with Docker for Cloud Foundry.
+>
+> **Stack:** Python · Flask · pydub · AssemblyAI · VOSK · deep-translator · Docker
+
+---
+
 Description
 
 This project implements an audio-to-audio translation application using Flask for web-based interaction. It leverages the following functionalities:
